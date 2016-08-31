@@ -1,0 +1,227 @@
+// --------------------------- //
+// Layouts ------------------- //
+// --------------------------- //
+
+.container {
+  max-width: 1260px;
+  width: 100%;
+  min-width: 1000px;
+  position: relative;
+}
+
+.header {
+  a {
+    color: $text-color;
+  }
+  &__top {
+    p {
+      font-size: $font-size14;
+      line-height: 2em;
+    }
+    a {
+      font-size: $font-size12;
+    }
+    background: $light-gray;
+    .language {
+      position: absolute;
+      left: 15px;
+      top: 0;
+    }
+    .enter {
+      position: absolute;
+      right: 15px;
+      top: 0;
+      padding-right: 20px;
+      background: url("../img/login.png") no-repeat right center;
+      ul {
+        margin-bottom: 0px;
+        li {
+          a {
+            display: inline-block;
+            line-height: 2.4em;
+            text-decoration: underline;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    position: relative;
+    .logo {
+      padding: 1em 0;
+    }
+    .header-menu {
+      ul {
+        li {
+          margin-left: 2.5em;
+          a {
+            font-size: 1.6em;
+            padding: 1.4em 38px 1.3em 4px;
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            &:after {
+              content: '';
+              transition: 0.2s;
+              height: 0;
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              background: $text-color;
+            }
+            &:hover {
+              text-decoration: none;
+              &:after {
+                height: 3px;
+                transition: 0.2s;
+              }
+            }
+            .fa {
+              margin-left: 10px;
+              display: inline-block;
+              position: absolute;
+              right: 0;
+              top: 50%;
+              margin-top: -16px;
+            }
+            .fa-phone {
+              font-size: 1.8em;
+            }
+            .fa-search {
+              font-size: 1.6em;
+            }
+            .fa-shopping-cart {
+              font-size: 1.4em;
+            }
+            .fa-bars {
+              font-size: 1.8em;
+            }
+          }
+        }
+      }
+    }
+    .menu-dropdown {
+      display: none;
+      padding: 20px 0;
+      position: absolute;
+      background: rgba(255, 255, 255, 0.95);
+      top: 100%;
+      width: 100%;
+      left: 0;
+      z-index: 999;
+      font-size: 1.4em;
+      &__left {
+        position: relative;
+        &:after {
+          width: 1px;
+          background: $light-gray;
+          height: 140px;
+          content: '';
+          position: absolute;
+          right: 15px;
+          top: 0;
+
+        }
+        .drop-menu ul {
+          margin-top: 1em;
+          &:first-child {
+            margin-top: 0;
+          }
+          li {
+            p {
+              margin-bottom: 0.6em;
+            }
+            a {
+              color: $link-gray;
+              text-decoration: underline;
+              margin-bottom: 7px;
+              display: inline-block;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+        .title {
+          font-size: 1.1em;
+          color: $black-color;
+          font-family: $sfuid-medium, sans-serif;
+        }
+      }
+      &__right {
+        a{
+          &:hover{
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer{
+  background: $footer-bg;
+  padding: 26px 0;
+  .footer__top{
+    margin-bottom: 15px;
+    ul{
+      @extend .inlineBlock;
+      a{
+        font-size: 1.6em;
+        padding-bottom: 4px;
+        margin: 0 2.2em;
+        position: relative;
+        text-decoration: none;
+        @extend .inlineBlock;
+        &:after {
+          content: '';
+          transition: 0.2s;
+          height: 0;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background: $text-color;
+        }
+        &:hover,
+        &.active{
+          text-decoration: none;
+          &:after {
+            height: 3px;
+            transition: 0.2s;
+          }
+        }
+      }
+    }
+  }
+  p{
+    font-size: 1.4em;
+    margin-bottom: 5px;
+  }
+  .fa-skype{
+    font-size: 1.1em;
+  }
+  a{
+    color: $footer-color !important;
+    text-decoration: underline;
+
+    &.dev{
+      padding-right: 76px;
+      background: url('../img/dev.png') no-repeat right;
+      text-decoration: none;
+    }
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+
+// шапки, футера, сайдбара

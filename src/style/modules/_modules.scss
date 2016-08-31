@@ -1,0 +1,276 @@
+// --------------------------- //
+// Modules ------------------- //
+// --------------------------- //
+
+.nav-pills, .breadcrumb {
+  padding: 0;
+  li {
+    a {
+      background: none;
+      border-radius: 0px;
+      padding: 0;
+      &:hover {
+        background: none;
+      }
+    }
+    & + li:before {
+      padding: 0;
+      color: $text-color;
+      margin-right: -2px;
+      font-size: $font-size12;
+    }
+  }
+}
+
+.chosen-container.chosen-container-single {
+  font-size: $font-size1;
+  text-transform: uppercase;
+  .chosen-single {
+    background: none;
+    padding: 0;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    line-height: 2.4em;
+    display: inline-block;
+    box-shadow: none;
+    color: $text-color;
+    text-decoration: none;
+    white-space: nowrap;
+    div b {
+      background: url('../img/chosen-sprite.png') no-repeat 0px 4px;
+    }
+
+  }
+  &.chosen-container-active.chosen-with-drop .chosen-single div b {
+    background-position: -18px 4px;
+  }
+
+  .chosen-drop {
+    border: none;
+    background: $light-gray;
+    box-shadow: none;
+    border-radius: 0;
+    top: 2.8em;
+    .chosen-results {
+      margin: 0;
+      padding: 0;
+      max-height: 240px;
+      font-size: $font-size12;
+      .highlighted {
+        color: $text-color;
+        background: $gray-color;
+      }
+    }
+  }
+}
+
+.bx-wrapper {
+  .bx-viewport {
+    box-shadow: none;
+    border: none;
+    left: 0px;
+    li {
+      height: 660px;
+    }
+  }
+}
+
+.hover-effect {
+  @extend .margin-b-5;
+}
+
+.text-preview {
+  color: $text-preview;
+  p {
+    font-size: 1.4em;
+    @extend .margin-b-20;
+  }
+  .title {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    font-family: $sfuid-medium;
+    a {
+      color: $text-preview;
+      &:hover {
+        color: $black-color;
+        text-decoration: none;
+      }
+    }
+  }
+  p:last-child {
+    margin-bottom: 0px;
+  }
+  .date {
+    font-size: 1.3em;
+    color: $date-grey;
+    margin-bottom: 0;
+  }
+  margin-bottom: 25px;
+  &last-child {
+    margin-bottom: 0;
+  }
+}
+
+.img-preview {
+  @extend .margin-b-10;
+  @extend .inlineBlock;
+}
+
+.border-banner {
+  position: relative;
+  .border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: block;
+    z-index: 2;
+    padding: 10px 15px !important;
+    div {
+      border: 3px solid $border-banner;
+      display: block;
+      height: 100%;
+    }
+  }
+}
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+
+.hover-effect {
+  display: block;
+  text-decoration: none !important;
+  figure.effect-bubba {
+    background: #262227;
+    position: relative;
+    img {
+      opacity: 1;
+      transition: opacity 1s;
+    }
+    figcaption {
+      margin-top: 5px;
+    }
+    figcaption::before,
+    figcaption::after {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      bottom: 8px;
+      left: 8px;
+      content: '';
+      opacity: 0;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+    }
+    figcaption::before {
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      -webkit-transform: scale(0, 1);
+      transform: scale(0, 1);
+    }
+    figcaption::after {
+      border-right: 2px solid #fff;
+      border-left: 2px solid #fff;
+      -webkit-transform: scale(1, 0);
+      transform: scale(1, 0);
+    }
+    p {
+      padding: 20px 0;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      margin-top: -45px;
+      width: 100%;
+      font-size: 1.8em;
+      text-align: center;
+      text-transform: uppercase;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: translate3d(0, 20px, 0);
+      transform: translate3d(0, 20px, 0);
+      color: #fff;
+    }
+  }
+  &:hover figure.effect-bubba {
+    //background: rgba(38,34,39,0.25);
+    img {
+      opacity: 0.75;
+    }
+    figcaption::before,
+    figcaption::after {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    p {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.border-button {
+  font-size: 1.5em;
+  color: $text-preview;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 4px solid $text-preview;
+  background: $border-btn;
+  padding: 8px 23px;
+  display: inline-block;
+  &:focus,
+  &:hover {
+    color: $white-color;
+    text-decoration: none;
+    background: $border-btn-hover;
+  }
+}
+
+.animate{
+  transition: 0.5s;
+  &:hover{
+    transition: 0.5s;
+  }
+}
+
+.popup-block{
+  background: $white-color;
+  .row{
+    & > div{
+      padding: 0;
+    }
+  }
+  .title{
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+}
+
+.form-control{
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 25px;
+}
+
+.pink-btn{
+  background: $pink-btn;
+  color: $white-color;
+  border: none;
+  font-size: 1.7em;
+  border-radius: 0;
+  padding: 6px 36px;
+  &:active,
+  &:focus,
+  &:hover{
+    color: $white-color;
+    background: $pink-btn-hover;
+    text-decoration: none;
+  }
+}
+
+// стили модулей, то есть блоков, которые могут использоваться несколько раз на одной странице. Д

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=1000">
+    <title>Devita</title>
+
+    <!--<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/chosen.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="header">
+    <div id="callback" class="popup-block">
+        <div class="row">
+            <div class="col-xs-5 callback__left">
+                <img src="img/callback.jpg" alt="">
+            </div>
+            <div class="col-xs-7 callback__right ">
+                <p class="title text-center">Обратный звонок</p>
+                <form class="text-center">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                               placeholder="Контактное лицо *">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputPassword1"
+                               placeholder="Номер телефона *">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Тема звонка"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-default pink-btn animate">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="callback1" class="popup-block">
+        <div class="row">
+            <div class="col-xs-5 callback__left">
+                <img src="img/callback.jpg" alt="">
+            </div>
+            <div class="col-xs-7 callback__right ">
+                <p class="title text-center">Обратный звонок</p>
+                <p>Спасибо, ваше сообщение принято. </p>
+                <p>В ближайшее время с вами свяжется наш менеджер.</p>
+                <a href="" class="pink-btn animate">Закрыть</a>
+            </div>
+        </div>
+    </div>
+    <div class="header__top">
+        <div class="container">
+            <p class="text-center">Оптовая продажа одежды от производителя</p>
+            <div class="language">
+                <select data-placeholder="Rus" class="chosen-select" style="width:350px;" tabindex="2">
+                    <option value=""></option>
+                    <option value="United States">Rus</option>
+                    <option value="United Kingdom">Eng</option>
+                </select>
+            </div>
+            <div class="enter">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="" class="link">Вход</a>
+                    </li>
+                    <li>
+                        <a href="" class="link">Регистрация</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <div class="logo">
+                        <a href=""><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="header-menu col-xs-9">
+                    <ul class="pull-right nav-pills ">
+                        <li>
+                            <a href="#callback" class="fancybox">Заказать звонок <i class="fa fa-phone"></i></a>
+                        </li>
+                        <li>
+                            <a href="#callback1" class="fancybox">Поиск <i class="fa fa-search"></i></a>
+                        </li>
+                        <li>
+                            <a href="">Корзина <i class="fa fa-shopping-cart"></i> <span></span></a>
+                        </li>
+                        <li>
+                            <a href="" class="menu-button">Меню
+                                <!--<i class="fa fa-bars"></i>-->
+                                <div id="nav-icon3">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menu-dropdown">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 menu-dropdown__left">
+                        <div class="row">
+                            <div class="col-xs-6 drop-menu">
+                                <ul>
+                                    <li>
+                                        <p class="title">Розничная продажа</p>
+                                        <a href="">Где купить продукцию DeVita</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="title">Сотрудничество </p>
+                                        <a href="">Уловия сотрудничества</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <p class="title">Обратная связь</p>
+                                        <a href="">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6 drop-menu">
+                                <ul>
+                                    <li><p class="title">Мир DeVita</p></li>
+                                    <li><a href="">О нас</a></li>
+                                    <li><a href="">О бренде</a></li>
+                                    <li><a href="">Сертификаты</a></li>
+                                    <li><a href="">Партнеры</a></li>
+                                    <li><a href="">Вакансии</a></li>
+                                    <li><a href="">Новости</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 menu-dropdown__right">
+                        <div class="row">
+                            <!--<div class="col-xs-4">-->
+                            <!--<a href="">-->
+                            <!--<div class="hover-effect">-->
+                            <!--<img src="img/catalog_header1.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<p>Весна-Лето 2016</p>-->
+                            <!--</a>-->
+                            <!--</div>-->
+                            <div class="col-xs-4">
+                                <a href="" class="hover-effect">
+                                    <figure class="effect-bubba">
+                                        <img src="img/catalog_header1.jpg" alt="">
+                                        <figcaption>
+
+                                        </figcaption>
+                                    </figure>
+                                    <p>Весна-Лето 2016</p>
+                                </a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="" class="hover-effect">
+                                    <figure class="effect-bubba">
+                                        <img src="img/catalog_header2.jpg" alt="">
+                                        <figcaption>
+
+                                        </figcaption>
+                                    </figure>
+                                    <p>Осень-Зима 2016</p>
+                                </a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="" class="hover-effect">
+                                    <figure class="effect-bubba">
+                                        <img src="img/catalog_header3.jpg" alt="">
+                                        <figcaption>
+
+                                        </figcaption>
+                                    </figure>
+                                    <p>DeVita Sport</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-slider">
+    <ul class="bxslider">
+        <li style="background: url(/img/slide1.jpg) 50% 50%">
+            <div class="container">
+                <div class="slider-text right-block">
+                    <p class="title">Лето здесь</p>
+                    <p>новая коллекция 2016</p>
+                    <a href="" class="border-button animate">Смотреть все</a>
+                </div>
+            </div>
+        </li>
+        <li style="background: url(/img/slide1.jpg) 50% 50%">
+            <div class="container">
+                <div class="slider-text right-block">
+                    <p class="title">Лето здесь</p>
+                    <p>новая коллекция 2016</p>
+                    <a href="" class="border-button animate">Смотреть все</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="page-content">
+    <div class="container">
+        <div class="page-content__banners">
+            <div class="row">
+                <div class="col-xs-6 big-banner big-banner_1">
+                    <img src="img/banner1.jpg" alt="">
+                    <div class="big-banner_text">
+                        <p class="title">Весна-лето 2016</p>
+                        <p>Модная линия</p>
+                        <a href="" class="border-button animate">Смотреть все</a>
+                    </div>
+                </div>
+                <div class="col-xs-6 big-banner big-banner_2">
+                    <img src="img/banner2.jpg" alt="">
+                    <div class="big-banner_text">
+                        <p class="title">Осень-зима 2016</p>
+                        <p>Модная линия</p>
+                        <a href="" class="border-button animate">Перейти в каталог</a>
+                    </div>
+                </div>
+                <div class="col-xs-3 big-banner">
+                    <a href="" class="hover-effect">
+                        <figure class="effect-bubba">
+                            <img src="img/banner3.jpg" alt="">
+                            <figcaption>
+                                <p>Смотреть<br /> в каталоге</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="col-xs-3 big-banner pull-right">
+                    <a href="" class="hover-effect">
+                        <figure class="effect-bubba">
+                            <img src="img/banner4.jpg" alt="">
+                            <figcaption>
+                                <p>Смотреть<br /> в каталоге</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="col-xs-9 big-banner big-banner_5">
+                    <img src="img/banner5.jpg" alt="">
+                    <div class="big-banner_text">
+                        <p class="title">Devita sport</p>
+                        <p>Спортивная линия</p>
+                        <a href="" class="border-button animate">Перейти в каталог</a>
+                    </div>
+                </div>
+                <div class="col-xs-3 big-banner pull-right">
+                    <a href="" class="hover-effect">
+                        <figure class="effect-bubba">
+                            <img src="img/banner6.jpg" alt="">
+                            <figcaption>
+                                <p>Смотреть<br /> в каталоге</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="page-content__advantages">
+            <div class="row text-center">
+                <div class="col-xs-3 ">
+                    <img src="img/devita-icon-1.svg" alt="">
+                    <div class="text-preview">
+                        <p class="title">Индивидуальный дизайн</p>
+                        <p>Это то, что отличает нас от остальных производителей.</p>
+                    </div>
+                </div>
+                <div class="col-xs-3 ">
+                    <img src="img/devita-icon-2.svg" alt="">
+                    <div class="text-preview">
+                        <p class="title">Безупречное качество</p>
+                        <p>Мы гордимся качеством нашей продукции и уверены в том, что сможем оправдать все ваши
+                            ожидания.</p>
+                    </div>
+                </div>
+                <div class="col-xs-3 ">
+                    <img src="img/devita-icon-3.svg" alt="">
+                    <div class="text-preview"><p class="title">Ежемесячное обновление коллекции</p>
+                        <p>Вы всегда сможете удивить своего клиента новым ассортиментом.</p>
+                    </div>
+                </div>
+                <div class="col-xs-3 ">
+                    <img src="img/devita-icon-4.svg" alt="">
+                    <div class="text-preview"><p class="title">Быстрая доставка</p>
+                        <p>Безопасно доставим ваш заказ в любую точку мира.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-content__news">
+            <div class="row">
+                <div class="col-xs-5 col-sm-7">
+                    <div class="text-preview">
+                        <p class="title">Как выгодно сотрудничать и зарабатывать с одеждой Devita</p>
+                        <p> DeVita - это молодая динамично развивающаяся торговая марка, производящая женскую одежду с
+                            великолепной посадкой
+                            и большим выбором размеров, для повседневной жизни и активного отдыха. Вся продукция
+                            производится из высококачественной
+                            ткани зарубежных производителей, проходит строжайший контроль качества и имеет сертификат
+                            таможенного союза.</p>
+                    </div>
+                    <div class="text-preview">
+                        <p class="title">Оптовая продажа</p>
+                        <p>Мы работаем на условиях 100% предоплаты со всеми регионами таможенного союза как по
+                            наличному, так и
+                            безналичному расчетам. Минимальный заказ 15 единиц без привязки к размерному ряду.</p>
+                        <p>Заказ производится Вами посредствам сайта, а так же по телефону, скайпу или заявкой по
+                            электронной
+                            почте, Ваш заказ действителен в течение 5 рабочих дней с момента выставления счета.</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-5">
+                    <div class="page-content__news_last">
+                        <a href="" class="img-preview"><img src="img/last_news.jpg" alt=""></a>
+                        <div class="text-preview">
+                            <p class="title"><a href="">Новая коллекция уже в продаже!</a></p>
+                            <p class="date">20.06.2016</p>
+                            <p>Объясняем на примере 12 главных тенденций лета 2017 года, какие вещи имеет смысл покупать
+                                сейчас и не откладывать в дальний ящик.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3 hidden-sm">
+                    <a href="">
+                        <img src="img/insta_main.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="page-content__down-socials page-content__banners">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 big-banner border-banner">
+                    <div class="row">
+                        <div class="border">
+                            <div></div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6">
+                            <img src="img/insta_img.jpg" alt="">
+                        </div>
+                        <div class="col-xs-6 col-sm-6 text-center">
+                            <div>
+                                <a href="" class="icon"><img src="img/icon_insta.png" alt=""></a>
+                                <p>Следите за последними событиями вместе с <a href="">DeVita</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-3 col-sm-3 big-banner">
+                    <img src="img/icon_img.jpg" alt="">
+                </div>
+                <div class="col-xs-3 col-sm-3 big-banner pull-right border-banner">
+                    <div class="row">
+                        <div class="border">
+                            <div></div>
+                        </div>
+                        <div class="col-xs-12">
+                            <img src="img/vk_img.jpg" alt="">
+                        </div>
+                        <div class="col-xs-12 text-center">
+                            <img src="img/vk_white.jpg" alt="">
+                            <div>
+                                <a href="" class="icon"><img src="img/icon_vk.png" alt=""></a>
+                                <p>Будьте всегда в курсе<br/> последних новостей<br/> вместе с <a href="">DeVita</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6  col-sm-6 big-banner">
+                    <a href=""><img src="img/facebook_img.jpg" alt=""></a>
+                </div>
+                <div class="col-xs-3  col-sm-3 big-banner">
+                    <a href=""><img src="img/youtube_img.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer__top text-center">
+            <ul class="nav-pills clearfix">
+                <li><a href="" class="active">Розничная продажа</a></li>
+                <li><a href="">О компании</a></li>
+                <li><a href="">Сертификаты</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer__bottom">
+            <div class="row">
+                <div class="col-xs-3">
+                    <p>ООО "Трамп Трейд"</p>
+                    <p><a href="" class="dev">Разработка сайта: </a></p>
+                </div>
+                <div class="col-xs-3">
+                    <p> +375 29 3757770</p>
+                    <p>+7 499 116 30 08</p>
+                </div>
+                <div class="col-xs-3">
+                    <p><a href="">devitabel@mail.ru</a></p>
+                    <p><i class="fa fa-skype" aria-hidden="true"></i> <a href=""> devitabel</a></p>
+                </div>
+                <div class="col-xs-3">
+                    <p>РБ, г.Брест, ул. Суворова, 104</p>
+                    <p>Режим работы: пн-пт: 8.30 - 17.30 <br />
+                        сб, вс: выходной.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.bxSlider.min.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

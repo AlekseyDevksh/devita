@@ -1,0 +1,101 @@
+/********************************
+    All The Utilities styles
+********************************/
+
+@font-face {
+  font-family: 'SFUIDisplay-Medium';
+  src: url('../fonts/SFUIDisplay-Medium.woff2') format('woff2'),
+  url('../fonts/SFUIDisplay-Medium.woff') format('woff'),
+  url('../fonts/SFUIDisplay-Medium.ttf') format('truetype'),
+  url('../fonts/SFUIDisplay-Medium.svg#SFUIDisplay-Medium') format('svg'),
+  url('../fonts/SFUIDisplay-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIDisplay-Regular';
+  src: url('../fonts/SFUIDisplay-Regular.eot');
+  src: url('../fonts/SFUIDisplay-Regular.woff2') format('woff2'),
+  url('../fonts/SFUIDisplay-Regular.woff') format('woff'),
+  url('../fonts/SFUIDisplay-Regular.ttf') format('truetype'),
+  url('../fonts/SFUIDisplay-Regular.svg#SFUIDisplay-Regular') format('svg'),
+  url('../fonts/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIDisplay-Heavy';
+  src: url('../fonts/SFUIDisplay-Heavy.eot');
+  src: url('../fonts/SFUIDisplay-Heavy.woff2') format('woff2'),
+  url('../fonts/SFUIDisplay-Heavy.woff') format('woff'),
+  url('../fonts/SFUIDisplay-Heavy.ttf') format('truetype'),
+  url('../fonts/SFUIDisplay-Heavy.svg#SFUIDisplay-Regular') format('svg'),
+  url('../fonts/SFUIDisplay-Heavy.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+$sfuid-regular:  'SFUIDisplay-Regular';
+$sfuid-medium:   'SFUIDisplay-Medium';
+
+$text-color:   #262228;
+
+$gray-color:   #e8e8e8;
+$light-gray:   #f3f3f3;
+$link-gray:    #525252;
+$text-preview: #4e4b50;
+$date-grey:    #6c6970;
+$border-banner:#ffa5b5;
+
+$border-btn: rgba(78,75,80,0);
+$border-btn-hover: rgba(78,75,80,1);
+$border-btn-slider-hover: rgba(255,255,255,0.2);
+
+$footer-bg: #f3f3f3;
+$footer-color: #262626;
+
+$pink-btn: #ffa5b5;
+$pink-btn-hover: #f396a6;
+
+$black-color:  #000;
+$white-color:  #fff;
+$font-size1:   1em;
+$font-size12:  1.2em;
+$font-size14:  1.4em;
+$font-size28:  2em;
+
+
+.marginMainBlocks {
+  margin-bottom: 45px;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.margin-b-5 {
+  margin-bottom: 5px;
+}
+
+.margin-b-10 {
+  margin-bottom: 10px;
+}
+
+.margin-b-15 {
+  margin-bottom: 15px;
+}
+
+.margin-b-20 {
+  margin-bottom: 20px;
+}
+
+.link_underline {
+  text-decoration: underline;
+  &:hover{
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,296 @@
+/********************************
+      All The States styles
+********************************/
+
+.chosen-search {
+  display: none;
+}
+
+.language .chosen-container.chosen-container-single {
+  width: 75px !important;
+}
+
+.main-slider {
+  @extend .marginMainBlocks;
+  .bx-wrapper {
+    margin-bottom: 0;
+    .bx-has-pager {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      .bx-pager {
+        text-align: right;
+        max-width: 1230px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        bottom: 18px;
+        a {
+          margin: 0 0 0 5px;
+          text-align: left;
+          background: #fff;
+          &:hover,
+          &.active {
+            background: #625457;
+          }
+        }
+      }
+    }
+  }
+  .slider-text{
+    width:50%;
+    text-align: center;
+    margin-top: 9%;
+    p{
+      color: $white-color;
+      text-transform: uppercase;
+      font-size: 4.6em;
+      font-weight: 700;
+      &.title{
+        font-size: 9.1em;
+        line-height: 110%;
+      }
+    }
+    .border-button{
+      margin-top: 45px;
+      color: $white-color;
+      border: 4px solid $white-color;
+      &:focus,
+      &:hover {
+        background: $border-btn-slider-hover;
+      }
+    }
+    &.right-block{
+      float: right;
+    }
+  }
+}
+
+.page-content {
+  &__banners {
+    @extend .marginMainBlocks;
+    .row {
+      margin-left: -5px;
+      margin-right: -5px;
+      .big-banner {
+        @extend .margin-b-10;
+        padding: 0 5px;
+        img {
+          width: 100%;
+        }
+        .hover-effect {
+          figure.effect-bubba {
+            figcaption::before,
+            figcaption::after {
+              top: 15px;
+              right: 15px;
+              bottom: 15px;
+              left: 15px;
+            }
+          }
+        }
+        &_text{
+          position: absolute;
+          width:100%;
+          z-index: 2;
+          text-align: center;
+          color: $text-preview;
+          .title{
+            font-size: 2.5em;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: 'SFUIDisplay-Heavy';
+            margin-bottom: 0px;
+          }
+          p{
+            font-size: 1.8em;
+            margin-bottom: 12px;
+          }
+        }
+
+      }
+      .big-banner_1{
+        position: relative;
+        .big-banner_text{
+          top:50%;
+          background: rgba(255,255,255,0.7);
+          margin-top: -82px;
+          padding: 24px 0;
+        }
+      }
+      .big-banner_2{
+        position: relative;
+        .big-banner_text{
+          top:60px;
+          text-align: left;
+          padding-left: 52px;
+          .border-button{
+            margin-top: 25px;
+          }
+        }
+      }
+      .big-banner_5{
+        position: relative;
+        .big-banner_text{
+          top:60px;
+          text-align: left;
+          padding-left: 52px;
+          .title{
+            font-size: 4.5em;
+          }
+          .border-button{
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+  }
+
+
+  &__advantages {
+    @extend .marginMainBlocks;
+    img {
+      display: inline-block;
+      margin-bottom: 26px;
+    }
+
+  }
+
+  .page-content__news {
+    @extend .marginMainBlocks;
+  }
+
+  .page-content__down-socials {
+    @extend .marginMainBlocks;
+    .big-banner .row {
+      margin: 0;
+      & > div {
+        padding: 0;
+        font-size: 1.6em;
+        &.text-center {
+
+          position: relative;
+          div {
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            padding-top: 25%;
+          }
+
+          .icon {
+            @extend .inlineBlock;
+            @extend .margin-b-15;
+          }
+          img {
+            width: auto;
+          }
+          a {
+            color: $text-preview;
+            @extend .link_underline;
+          }
+        }
+      }
+    }
+    .pull-right.border-banner .row .text-center div {
+      padding-top: 20%;
+    }
+  }
+}
+
+#nav-icon3 {
+  width: 26px;
+  margin-left: 10px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -12px;
+  height: 21px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #000;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    &:nth-child(1) {
+      top: 0px;
+    }
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: 9px;
+    }
+    &:nth-child(4) {
+      top: 18px;
+    }
+
+  }
+  &.open span {
+    &:nth-child(1) {
+      top: 9px;
+      width: 0%;
+      left: 50%;
+    }
+    &:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    &:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+    &:nth-child(4) {
+      top: 9px;
+      width: 0%;
+      left: 50%;
+    }
+  }
+}
+
+.fancybox-overlay{
+  background: rgba(0,0,0,0.5);
+}
+
+.fancybox-skin{
+  border-radius: 0;
+  .fancybox-close{
+    top:0;
+    right:0;
+  }
+}
+
+.popup-block{
+  width: 706px !important;
+  display: none;
+  .row{
+    margin: 0;
+    .callback__right{
+      padding: 2.4em 3em 0 2em;
+      textarea{
+        height:76px;
+      }
+    }
+  }
+}
+
+.fancybox-skin{
+  padding: 0 !important;
+}
+
+
+// State rules — стили состояния. В этом разделе прописываются различные состояния модулей и скелета сайта.
